@@ -123,10 +123,10 @@ export default function LoginScreen() {
     >
       <View>
         <HeadingText style={{ color: "coral" }}>
-          welcome back to convene
+          Welcome back to convene
         </HeadingText>
         <SubHeadingText onPress={() => navigate("signup")}>
-          don't have an account? create one now
+          Don't have an account? CREATE HERE
         </SubHeadingText>
 
         <View style={{ marginTop: 32, gap: 16 }}>

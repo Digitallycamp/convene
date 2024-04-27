@@ -136,19 +136,20 @@ export default function SignupScreen() {
     <ScrollView
       style={{
         width: screenWidth,
-        height: screenHeight,
+       
         backgroundColor: "#fff",
         paddingHorizontal: 16,
         paddingVertical: 32,
+       
       }}
       contentContainerStyle={{ flex: 1, justifyContent: "space-between" }}
     >
-      <View>
+      <View style={{ overflow: "scroll"}}>
         <HeadingText style={{ color: "coral" }}>
-          hey there, welcome to convene
+          Hey there, welcome to convene
         </HeadingText>
         <SubHeadingText onPress={() => navigate("login")}>
-          already have an account? login
+          Already have an account? LOGIN HERE
         </SubHeadingText>
 
         <View style={{ marginTop: 32, gap: 16 }}>

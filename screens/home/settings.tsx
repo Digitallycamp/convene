@@ -104,11 +104,11 @@ export default function Settings() {
               flex: 1,
             }}
           >
-            <BoldText style={{ paddingVertical: 0 }}>
+            <BoldText style={{ paddingVertical: 0 , textTransform:'capitalize'}}>
               {user?.username || user?.email}
             </BoldText>
             <RegularText
-              style={{ paddingVertical: 0, fontSize: 11, color: "gray" }}
+              style={{ paddingVertical: 0, fontSize: 11, color: "gray", textTransform:'capitalize' }}
             >
               {user?.username && user?.email}
             </RegularText>
@@ -247,7 +247,7 @@ export default function Settings() {
           activeOpacity={0.8}
           onPress={() =>
             Alert.alert(
-              "do you want to log out?",
+              "Do you want to log out?",
               "this will log you out of the current device but still retain your data in the cloud.",
               [
                 { text: "no", onPress: () => {} },

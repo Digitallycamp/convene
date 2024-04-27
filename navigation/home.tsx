@@ -45,7 +45,7 @@ const HomeNavigation = () => {
         name="add-event"
         component={AddEventScreen}
         options={({ navigation, route }) => ({
-          title: "add event",
+          title: "Add event",
           headerLeft: () => (
             <TouchableOpacity
               style={{
@@ -72,7 +72,7 @@ const HomeNavigation = () => {
         name="unsplash"
         component={AddUnsplashImage}
         options={({ navigation, route }) => ({
-          title: "search unsplash",
+          title: "Search unsplash",
           headerLeft: () => (
             <TouchableOpacity
               style={{

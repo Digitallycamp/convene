@@ -98,12 +98,12 @@ export default function AddEventScreen({ navigation }: any) {
         event_title: title,
         event_image: image,
         event_description: description,
-        event_location: "Accra, Ghana",
+        event_location: "Enugu, Nigeria",
         user_uid: user.uid,
       });
       setLoading(false),
         showMessage({
-          message: "event successfully created!",
+          message: "Event successfully created!",
           type: "success",
           icon: "success",
         });
@@ -112,7 +112,7 @@ export default function AddEventScreen({ navigation }: any) {
       console.log(e);
 
       showMessage({
-        message: "failed to create event!",
+        message: "Failed to create event!",
         type: "danger",
         icon: "danger",
       });
@@ -191,7 +191,7 @@ export default function AddEventScreen({ navigation }: any) {
           }}
         >
           <BorderlessInput
-            placeholder="what's happening?"
+            placeholder="What's happening?"
             onChangeText={(e) => setTitle(e)}
             maxLength={50}
             value={title}
@@ -203,7 +203,7 @@ export default function AddEventScreen({ navigation }: any) {
               <Ionicons name="ios-calendar-outline" size={20} color={"gray"} />
               <TouchableOpacity onPress={() => setDatePickerOpen(true)}>
                 <MediumText style={{ color: "gray", fontSize: 16 }}>
-                  {startDate === undefined && "press to select a start date"}
+                  {startDate === undefined && "Press to select a start date"}
                   {startDate !== undefined &&
                     `your start date - ${dayjs(startDate).format(
                       "DD MMMM, YYYY"
@@ -215,7 +215,7 @@ export default function AddEventScreen({ navigation }: any) {
               <Ionicons name="ios-time-outline" size={23} color={"gray"} />
               <TouchableOpacity onPress={() => setTimePickerOpen(true)}>
                 <MediumText style={{ color: "gray", fontSize: 16 }}>
-                  {startTime === undefined && "press to select a start time"}
+                  {startTime === undefined && "Press to select a start time"}
                   {startTime !== undefined &&
                     `your start time - ${dayjs(startTime).format("HH:mm A")}`}
                 </MediumText>
@@ -255,7 +255,7 @@ export default function AddEventScreen({ navigation }: any) {
           )}
 
           <BorderlessInput
-            placeholder="describe your event"
+            placeholder="Describe your event"
             onChangeText={(e) => setDescription(e)}
             value={description}
             multiline={true}
@@ -264,7 +264,7 @@ export default function AddEventScreen({ navigation }: any) {
 
           <PrimaryButton
             title={
-              loading ? <ActivityIndicator color={"#fff"} /> : "create event"
+              loading ? <ActivityIndicator color={"#fff"} /> : "Create event"
             }
             onPress={handleCreateEvent}
           />

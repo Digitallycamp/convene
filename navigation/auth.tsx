@@ -37,7 +37,7 @@ export default function AuthNavigation() {
         name="signup"
         component={SignupScreen}
         options={{
-          title: "create account",
+          title: "Create account",
           headerLeft: () => (
             <TouchableOpacity
               style={{
